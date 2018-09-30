@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-09-30T06:14:44.468Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>李其伟</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdownpad2的使用</title>
+    <link href="http://yoursite.com/2018/09/30/markdownpad2%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/09/30/markdownpad2的使用/</id>
+    <published>2018-09-30T03:30:24.000Z</published>
+    <updated>2018-09-30T06:14:44.468Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网地址<a href="http://markdownpad.com/" target="_blank" rel="noopener">http://markdownpad.com/</a></p><h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><p><a href="https://blog.csdn.net/mp624183768/article/details/65644390" target="_blank" rel="noopener">markdownpad2的授权key</a></p><p>邮箱地址：<a href="mailto:Soar360@live.com" target="_blank" rel="noopener">Soar360@live.com</a>授权秘钥：GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p><hr><p>本文来自 丿灬安之若死 的CSDN 博客 ，全文地址请点击：<a href="https://blog.csdn.net/mp624183768/article/details/65644390?utm_source=copy" target="_blank" rel="noopener">https://blog.csdn.net/mp624183768/article/details/65644390?utm_source=copy</a> </p><h2 id="中文设置"><a href="#中文设置" class="headerlink" title="中文设置"></a>中文设置</h2><p>在菜单栏”tools”，点击”option”选项，弹出下面窗口<br><img src="/2018/09/30/markdownpad2的使用/123.png" title="This is an example image"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;官网地址&lt;a href=&quot;http://markdownpad.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;h
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="markdownpad" scheme="http://yoursite.com/tags/markdownpad/"/>
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+    
+  </entry>
+  
+</feed>
