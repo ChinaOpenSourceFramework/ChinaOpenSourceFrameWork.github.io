@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-30T06:14:44.468Z</updated>
+  <updated>2018-09-30T09:12:25.960Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搭建过程</title>
+    <link href="http://yoursite.com/2018/09/30/hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>http://yoursite.com/2018/09/30/hexo搭建过程/</id>
+    <published>2018-09-30T08:41:34.000Z</published>
+    <updated>2018-09-30T09:12:25.960Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo官网"><a href="#hexo官网" class="headerlink" title="hexo官网"></a>hexo官网</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">官网</a><br>由于是中文网站，安装配置直接参考官网</p><h2 id="hexo主题next"><a href="#hexo主题next" class="headerlink" title="hexo主题next"></a>hexo主题next</h2><p><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">官网</a><br>由于是中文网站，配置直接参考官网</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;hexo官网&quot;&gt;&lt;a href=&quot;#hexo官网&quot; class=&quot;headerlink&quot; title=&quot;hexo官网&quot;&gt;&lt;/a&gt;hexo官网&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>markdownpad2的使用</title>
