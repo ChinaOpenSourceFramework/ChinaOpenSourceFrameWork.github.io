@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="博客">
 <meta property="og:description" content="sqlserver数据迁移到oracle数据库sqlserver数据库连接根据备份数据库还原导出sql文件，包含创建结构和数据使用notepad++打开sql源文件 修改表结构创建语句 添加表结构主外键、索引等 修改insert into 插入语句1. 去掉[dbo].[] 之类的 2. N&amp;apos; 替换 &amp;apos; 3. 替换时间类型 `(\d{4}-\d{2}-\d{2}\s*\d{2}">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-08T07:38:46.109Z">
+<meta property="og:updated_time" content="2018-10-08T08:12:10.292Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sqlserver数据迁移到oracle数据库">
 <meta name="twitter:description" content="sqlserver数据迁移到oracle数据库sqlserver数据库连接根据备份数据库还原导出sql文件，包含创建结构和数据使用notepad++打开sql源文件 修改表结构创建语句 添加表结构主外键、索引等 修改insert into 插入语句1. 去掉[dbo].[] 之类的 2. N&amp;apos; 替换 &amp;apos; 3. 替换时间类型 `(\d{4}-\d{2}-\d{2}\s*\d{2}">
@@ -349,7 +349,7 @@
                 
               
 
-              <time title="创建时间：2018-10-08 15:15:35 / 修改时间：15:38:46" itemprop="dateCreated datePublished" datetime="2018-10-08T15:15:35+08:00">2018-10-08</time>
+              <time title="创建时间：2018-10-08 15:15:35 / 修改时间：16:12:10" itemprop="dateCreated datePublished" datetime="2018-10-08T15:15:35+08:00">2018-10-08</time>
             
 
             
@@ -398,15 +398,17 @@
 to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`
 </code></pre></li>
 </ol>
-<h3 id="oracle-命令行登录"><a href="#oracle-命令行登录" class="headerlink" title="oracle 命令行登录"></a>oracle 命令行登录</h3><ol>
-<li>set NLS_LANG=american_america.AL32UTF8</li>
-<li>打开cmd,输入：sqlplus/nolog</li>
-<li>输入：conn username/passworld@数据库名称        </li>
-<li>设置编码，默认gbk,现在sql使用utf-8, 要重新设置否则会乱码执行不了<blockquote>
-<p>执行语句<br><code>sqlplus -s IOP/IOP@wsy @a.sql &gt; d:\out.log</code></p>
-</blockquote>
-</li>
+<h3 id="oracle-命令行登录"><a href="#oracle-命令行登录" class="headerlink" title="oracle 命令行登录"></a>oracle 命令行登录</h3><p>   设置编码，默认gbk,现在sql使用utf-8, 要重新设置否则会乱码执行不了<br>   <code>set NLS_LANG=american_america.AL32UTF8</code></p>
+<p>   执行语句</p>
+<p>   <code>sqlplus -s IOP/IOP@wsy @a.sql &gt; d:\out.log</code></p>
+<blockquote>
+<p>说明:</p>
+<ol>
+<li>IOP/IOP是用户名和密码</li>
+<li>wsy是监听名称</li>
+<li>d:\out.log是插入语句输出日志，记录插入正确性</li>
 </ol>
+</blockquote>
 
       
     </div>
@@ -449,6 +451,10 @@ to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/08/HexoEditor快捷运行/" rel="prev" title="HexoEditor快捷运行">
+                HexoEditor快捷运行 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -522,7 +528,7 @@ to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -556,7 +562,9 @@ to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-08T07:38:46.109Z</updated>
+  <updated>2018-10-08T08:26:17.813Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HexoEditor快捷运行</title>
+    <link href="http://yoursite.com/2018/10/08/HexoEditor%E5%BF%AB%E6%8D%B7%E8%BF%90%E8%A1%8C/"/>
+    <id>http://yoursite.com/2018/10/08/HexoEditor快捷运行/</id>
+    <published>2018-10-08T08:17:47.000Z</published>
+    <updated>2018-10-08T08:26:17.813Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="快速运行HexoEditor编辑器"><a href="#快速运行HexoEditor编辑器" class="headerlink" title="快速运行HexoEditor编辑器"></a>快速运行HexoEditor编辑器</h1><p>EexoEditor 其他官方给的是命令行启动，但是window用户还是习惯用鼠标点。因此把启动运行的脚本放在一个.bat文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">rem 这是hexo编辑器，启动脚本</span><br><span class="line">rem 执行命令是 npm start</span><br><span class="line">rem 如果无法启动，采用原始方法</span><br><span class="line"></span><br><span class="line">rem 打开cmd</span><br><span class="line">rem 切换到HexoEditor</span><br><span class="line">rem 运行命令 npm start</span><br><span class="line"></span><br><span class="line">rem 谢谢使用</span><br><span class="line"></span><br><span class="line">cd &quot;E:\HexoEditor&quot;</span><br><span class="line">e:</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure><p>说明：新建个文件xxxx.bat。把上面代码拷贝进去。根据自己HexoEditor文件存放位置，替换对应的<code>E:\HexoEditor</code>。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;快速运行HexoEditor编辑器&quot;&gt;&lt;a href=&quot;#快速运行HexoEditor编辑器&quot; class=&quot;headerlink&quot; title=&quot;快速运行HexoEditor编辑器&quot;&gt;&lt;/a&gt;快速运行HexoEditor编辑器&lt;/h1&gt;&lt;p&gt;EexoEditor
+      
+    
+    </summary>
+    
+    
+      <category term="HexoEditor" scheme="http://yoursite.com/tags/HexoEditor/"/>
+    
+  </entry>
+  
+  <entry>
     <title>sqlserver数据迁移到oracle数据库</title>
     <link href="http://yoursite.com/2018/10/08/sqlserver%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%88%B0oracle%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://yoursite.com/2018/10/08/sqlserver数据迁移到oracle数据库/</id>
     <published>2018-10-08T07:15:35.000Z</published>
-    <updated>2018-10-08T07:38:46.109Z</updated>
+    <updated>2018-10-08T08:12:10.292Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="sqlserver数据迁移到oracle数据库"><a href="#sqlserver数据迁移到oracle数据库" class="headerlink" title="sqlserver数据迁移到oracle数据库"></a>sqlserver数据迁移到oracle数据库</h1><h3 id="sqlserver数据库连接"><a href="#sqlserver数据库连接" class="headerlink" title="sqlserver数据库连接"></a>sqlserver数据库连接</h3><h3 id="根据备份数据库还原"><a href="#根据备份数据库还原" class="headerlink" title="根据备份数据库还原"></a>根据备份数据库还原</h3><h3 id="导出sql文件，包含创建结构和数据"><a href="#导出sql文件，包含创建结构和数据" class="headerlink" title="导出sql文件，包含创建结构和数据"></a>导出sql文件，包含创建结构和数据</h3><h3 id="使用notepad-打开sql源文件"><a href="#使用notepad-打开sql源文件" class="headerlink" title="使用notepad++打开sql源文件"></a>使用notepad++打开sql源文件</h3><ol><li>修改表结构创建语句</li><li>添加表结构主外键、索引等</li><li>修改<code>insert into</code> 插入语句<pre><code>1. 去掉[dbo].[] 之类的2. N&apos; 替换 &apos;3. 替换时间类型`(\d{4}-\d{2}-\d{2}\s*\d{2}:\d{2}:\d{2})\.\d{3}&apos;替换为   to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`</code></pre></li></ol><h3 id="oracle-命令行登录"><a href="#oracle-命令行登录" class="headerlink" title="oracle 命令行登录"></a>oracle 命令行登录</h3><ol><li>set NLS_LANG=american_america.AL32UTF8</li><li>打开cmd,输入：sqlplus/nolog</li><li>输入：conn username/passworld@数据库名称        </li><li>设置编码，默认gbk,现在sql使用utf-8, 要重新设置否则会乱码执行不了<blockquote><p>执行语句<br><code>sqlplus -s IOP/IOP@wsy @a.sql &gt; d:\out.log</code></p></blockquote></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="sqlserver数据迁移到oracle数据库"><a href="#sqlserver数据迁移到oracle数据库" class="headerlink" title="sqlserver数据迁移到oracle数据库"></a>sqlserver数据迁移到oracle数据库</h1><h3 id="sqlserver数据库连接"><a href="#sqlserver数据库连接" class="headerlink" title="sqlserver数据库连接"></a>sqlserver数据库连接</h3><h3 id="根据备份数据库还原"><a href="#根据备份数据库还原" class="headerlink" title="根据备份数据库还原"></a>根据备份数据库还原</h3><h3 id="导出sql文件，包含创建结构和数据"><a href="#导出sql文件，包含创建结构和数据" class="headerlink" title="导出sql文件，包含创建结构和数据"></a>导出sql文件，包含创建结构和数据</h3><h3 id="使用notepad-打开sql源文件"><a href="#使用notepad-打开sql源文件" class="headerlink" title="使用notepad++打开sql源文件"></a>使用notepad++打开sql源文件</h3><ol><li>修改表结构创建语句</li><li>添加表结构主外键、索引等</li><li>修改<code>insert into</code> 插入语句<pre><code>1. 去掉[dbo].[] 之类的2. N&apos; 替换 &apos;3. 替换时间类型`(\d{4}-\d{2}-\d{2}\s*\d{2}:\d{2}:\d{2})\.\d{3}&apos;替换为   to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`</code></pre></li></ol><h3 id="oracle-命令行登录"><a href="#oracle-命令行登录" class="headerlink" title="oracle 命令行登录"></a>oracle 命令行登录</h3><p>   设置编码，默认gbk,现在sql使用utf-8, 要重新设置否则会乱码执行不了<br>   <code>set NLS_LANG=american_america.AL32UTF8</code></p><p>   执行语句</p><p>   <code>sqlplus -s IOP/IOP@wsy @a.sql &gt; d:\out.log</code></p><blockquote><p>说明:</p><ol><li>IOP/IOP是用户名和密码</li><li>wsy是监听名称</li><li>d:\out.log是插入语句输出日志，记录插入正确性</li></ol></blockquote>]]></content>
     
     <summary type="html">
     
