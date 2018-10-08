@@ -108,14 +108,18 @@
 
 
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="20181008151535">
+  <meta name="description" content="sqlserver数据迁移到oracle数据库sqlserver数据库连接根据备份数据库还原导出sql文件，包含创建结构和数据使用notepad++打开sql源文件 修改表结构创建语句 添加表结构主外键、索引等 修改insert into 插入语句1. 去掉[dbo].[] 之类的 2. N&amp;apos; 替换 &amp;apos; 3. 替换时间类型 `(\d{4}-\d{2}-\d{2}\s*\d{2}">
+<meta name="keywords" content="sqlserver数据迁移">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sqlserver数据迁移到oracle数据库">
 <meta property="og:url" content="http://yoursite.com/2018/10/08/sqlserver数据迁移到oracle数据库/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="sqlserver数据迁移到oracle数据库sqlserver数据库连接根据备份数据库还原导出sql文件，包含创建结构和数据使用notepad++打开sql源文件 修改表结构创建语句 添加表结构主外键、索引等 修改insert into 插入语句1. 去掉[dbo].[] 之类的 2. N&amp;apos; 替换 &amp;apos; 3. 替换时间类型 `(\d{4}-\d{2}-\d{2}\s*\d{2}">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-08T07:15:35.391Z">
+<meta property="og:updated_time" content="2018-10-08T07:38:46.109Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20181008151535">
+<meta name="twitter:title" content="sqlserver数据迁移到oracle数据库">
+<meta name="twitter:description" content="sqlserver数据迁移到oracle数据库sqlserver数据库连接根据备份数据库还原导出sql文件，包含创建结构和数据使用notepad++打开sql源文件 修改表结构创建语句 添加表结构主外键、索引等 修改insert into 插入语句1. 去掉[dbo].[] 之类的 2. N&amp;apos; 替换 &amp;apos; 3. 替换时间类型 `(\d{4}-\d{2}-\d{2}\s*\d{2}">
 
 
 
@@ -134,7 +138,7 @@
   };
 </script>
 
-  <title>20181008151535 | 博客</title>
+  <title>sqlserver数据迁移到oracle数据库 | 博客</title>
   
 
 
@@ -320,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">20181008151535
+          <h1 class="post-title" itemprop="name headline">sqlserver数据迁移到oracle数据库
               
             
           </h1>
@@ -345,9 +349,13 @@
                 
               
 
-              <time title="创建时间：2018-10-08 15:15:35" itemprop="dateCreated datePublished" datetime="2018-10-08T15:15:35+08:00">2018-10-08</time>
+              <time title="创建时间：2018-10-08 15:15:35 / 修改时间：15:38:46" itemprop="dateCreated datePublished" datetime="2018-10-08T15:15:35+08:00">2018-10-08</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -379,7 +387,27 @@
       
 
       
-        
+        <h1 id="sqlserver数据迁移到oracle数据库"><a href="#sqlserver数据迁移到oracle数据库" class="headerlink" title="sqlserver数据迁移到oracle数据库"></a>sqlserver数据迁移到oracle数据库</h1><h3 id="sqlserver数据库连接"><a href="#sqlserver数据库连接" class="headerlink" title="sqlserver数据库连接"></a>sqlserver数据库连接</h3><h3 id="根据备份数据库还原"><a href="#根据备份数据库还原" class="headerlink" title="根据备份数据库还原"></a>根据备份数据库还原</h3><h3 id="导出sql文件，包含创建结构和数据"><a href="#导出sql文件，包含创建结构和数据" class="headerlink" title="导出sql文件，包含创建结构和数据"></a>导出sql文件，包含创建结构和数据</h3><h3 id="使用notepad-打开sql源文件"><a href="#使用notepad-打开sql源文件" class="headerlink" title="使用notepad++打开sql源文件"></a>使用notepad++打开sql源文件</h3><ol>
+<li>修改表结构创建语句</li>
+<li>添加表结构主外键、索引等</li>
+<li>修改<code>insert into</code> 插入语句<pre><code>1. 去掉[dbo].[] 之类的
+2. N&apos; 替换 &apos;
+3. 替换时间类型
+`(\d{4}-\d{2}-\d{2}\s*\d{2}:\d{2}:\d{2})\.\d{3}&apos;
+替换为   
+to_date\(&apos;\1&apos;,&apos;yyyy-MM-dd HH24:mi:ss&apos;\)`
+</code></pre></li>
+</ol>
+<h3 id="oracle-命令行登录"><a href="#oracle-命令行登录" class="headerlink" title="oracle 命令行登录"></a>oracle 命令行登录</h3><ol>
+<li>set NLS_LANG=american_america.AL32UTF8</li>
+<li>打开cmd,输入：sqlplus/nolog</li>
+<li>输入：conn username/passworld@数据库名称        </li>
+<li>设置编码，默认gbk,现在sql使用utf-8, 要重新设置否则会乱码执行不了<blockquote>
+<p>执行语句<br><code>sqlplus -s IOP/IOP@wsy @a.sql &gt; d:\out.log</code></p>
+</blockquote>
+</li>
+</ol>
+
       
     </div>
 
@@ -396,6 +424,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/sqlserver数据迁移/" rel="tag"><i class="fa fa-tag"></i> sqlserver数据迁移</a>
+          
+        </div>
       
 
       
@@ -459,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -511,7 +554,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -558,6 +603,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#sqlserver数据迁移到oracle数据库"><span class="nav-number">1.</span> <span class="nav-text">sqlserver数据迁移到oracle数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sqlserver数据库连接"><span class="nav-number">1.0.1.</span> <span class="nav-text">sqlserver数据库连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据备份数据库还原"><span class="nav-number">1.0.2.</span> <span class="nav-text">根据备份数据库还原</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导出sql文件，包含创建结构和数据"><span class="nav-number">1.0.3.</span> <span class="nav-text">导出sql文件，包含创建结构和数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用notepad-打开sql源文件"><span class="nav-number">1.0.4.</span> <span class="nav-text">使用notepad++打开sql源文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#oracle-命令行登录"><span class="nav-number">1.0.5.</span> <span class="nav-text">oracle 命令行登录</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
